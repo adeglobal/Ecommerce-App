@@ -37,7 +37,7 @@ public class AdminController {
     @PostMapping(value="/registerAdmin")
     public String registerAdmin(@ModelAttribute Admin admin ){
         adminService.registerAdmin(admin);
-        return "redirect:/admin/loginAdmin";
+        return "redirect:/admin/login";
     }
 
     @GetMapping( value="/login")
